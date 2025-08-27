@@ -27,7 +27,7 @@ var app = express();
 //     next()
 // })
 const corsOptions = {
-  origin: 'http://localhost:5173',  // The frontend origin
+  origin: ['http://localhost:5173', 'https://resturant-fronend.onrender.com'], // The frontend origin
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],  // Allowed methods
   allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
   credentials: true, // Allow cookies and credentials
